@@ -436,6 +436,16 @@ template {
   src: url("../fonts/open-sans.eot");
   src: local('OpenSans'), url("../fonts/open-sans.eot") format('embedded-opentype'), url("../fonts/open-sans.ttf") format('truetype'), url("../fonts/open-sans.svg#OpenSans") format('svg'), url("../fonts/open-sans.woff") format('woff');
 }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -475,15 +485,76 @@ strong {
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
 }
-.encabezado__barra__logo {
-  height: 50px;
-  overflow: hidden;
-  width: 200px;
+.encabezado__menu-b {
+  color: #f2075d;
+  display: block;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  line-height: 150%;
+  text-align: center;
+  text-decoration: none;
 }
-.encabezado__barra__logo-imagen {
+.encabezado__menu-b:hover {
+  color: #aaa;
+}
+.encabezado__logo-imagen {
+  display: none;
   width: 100%;
+}
+.encabezado__logo-titulo {
+  color: #f2075d;
+  margin: 0;
+  font-size: 2rem;
+  line-height: 150%;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+.encabezado__navegacion {
+  background: #040507;
+}
+.encabezado__navegacion-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.encabezado__navegacion-enlace {
+  border-top: 1px dotted rgba(170,170,170,0.2);
+  color: #d70cf2;
+  display: block;
+  font-family: "Roboto";
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.encabezado__navegacion-enlace:hover {
+  background: #070a0d;
+  color: #aaa;
+}
+.encabezado__navegacion-enlaceActivo {
+  color: #f2e41b;
+}
+.encabezado__navegacion-enlaceActivo:hover {
+  color: #f2e41b;
+}
+.abierto {
+  height: auto;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  visibility: visible;
+}
+.cerrado {
+  height: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  visibility: hidden;
+}
+.home__contenido {
+  background: url("http://lorempixel.com/800/350/urban") 50% 50% no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
