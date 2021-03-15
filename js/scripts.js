@@ -1,4 +1,14 @@
 window.addEventListener("DOMContentLoaded", elMenu);
+window.addEventListener("DOMContentLoaded", anclas);
+
+function anclas()
+{
+	// Deshabilitar las funciones por defectos de los enlaces, sólo para desarrollo
+	const anclas = document.querySelectorAll(".boton-deshabilitado");
+	anclas.forEach(element => {
+		element.addEventListener("click", (ev) => ev.preventDefault());
+	});
+}
 
 // Funcionalidad al botón del menú
 function elMenu(ev)

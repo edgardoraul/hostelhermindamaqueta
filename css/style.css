@@ -505,8 +505,8 @@ strong {
 .encabezado__logo-titulo {
   color: #f2075d;
   margin: 0;
-  font-size: 2rem;
-  line-height: 150%;
+  font-size: 1.5rem;
+  line-height: 200%;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
 }
@@ -552,9 +552,108 @@ strong {
   visibility: hidden;
 }
 .home__contenido {
-  background: url("http://lorempixel.com/800/350/urban") 50% 50% no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  height: calc(100vh - 4rem);
+  position: relative;
+}
+.home__contenido-boton {
+  margin-top: 2rem;
+}
+.home__contenido-titular,
+.home__contenido-subtitular {
+  color: #fff;
+  margin: 1rem auto;
+}
+.home__division {
+  -ms-flex-line-pack: center;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -o-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: calc(100vh - 4rem);
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.home-filtro {
+  background: url("../img/1.jpg") 50% 50% no-repeat;
+  filter: sepia(75%);
+  height: calc(100vh - 4rem);
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.home-filtro:after {
+  background-color: rgba(34,65,25,0.5);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.boton {
+  background: #f2075d;
+  border: none;
+  border-radius: 4rem;
+  color: #fff;
+  font-family: "Roboto";
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.boton:hover {
+  background: #d70cf2;
+  cursor: pointer;
+}
+.boton-grande {
+  font-size: 1.5rem;
+}
+.boton-advertencia {
+  background: #f2e41b;
+  color: #070a0d;
+}
+.boton-advertencia:hover {
+  background: #f2e41b;
+  color: #fff;
+  text-shadow: 0px 0px 1px #000;
+}
+.boton-deshabilitado {
+  background: #aaa;
+  color: #fff;
+}
+.boton-deshabilitado:hover {
+  background: #aaa;
+  color: #fff;
+  cursor: not-allowed;
+}
+.boton-correcto {
+  background: #f20775;
 }
 /*# sourceMappingURL=style.css.map */
